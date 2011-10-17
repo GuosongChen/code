@@ -1,1 +1,6 @@
-Encrypt/Decrypt file
+This is a simple perl script to encrypt/decrypt file with openssl, it's according to DOD's requirement.
+
+How to create the public/private key:
+openssl genrsa -aes256 -out /tmp/private.pem 2048
+openssl rsa -in /tmp/private.pem -out /tmp/public.pem -pubout
+
